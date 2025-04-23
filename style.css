@@ -48,6 +48,38 @@ h1, h2, h3, h4, h5, h6 {
 
 /** Your CSS Below **/
 
+body {
+  font-family: var(--fs-base);
+  display: flex;
+  flex-direction: column;
+  align-items: center;       
+  justify-content: center;   
+  min-height: 100vh;
+  font-size: var(--font-paragraph);
+  background-color: var(--clr-paleBlue);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 400px;
+  width: 600px;
+  max-width: 750px;
+  background-color: var(--clr-white);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0.5rem 0.5rem 1rem var(--clr-lightLavender); /*todo */
+}
+
+.result-card{
+  background-image: linear-gradient(var(--gra-lightSlateBlue), var(--gra-lightRoyalBlue));
+  border-radius: 1.5rem;
+}
+
+
+
+
+
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
